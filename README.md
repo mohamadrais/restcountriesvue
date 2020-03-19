@@ -1,5 +1,14 @@
-# countries
+# Restcountries
 
+## Eslint setup
+```
+npm install eslint --save-dev
+```
+
+## Eslint update
+```
+npm install eslint-plugin-vue -u
+```
 ## Project setup
 ```
 npm install
@@ -24,4 +33,3 @@ npm run test
 ```
 npm run lint
 ```
-"# restcountries" 

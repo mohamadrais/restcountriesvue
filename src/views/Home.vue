@@ -22,7 +22,6 @@
         name: 'home',
         components: {
             Country,
-            Letter,
         },
         data () {
             return {
@@ -33,10 +32,6 @@
             }
         },
         methods: {
-            filterByLetter(letter) {
-                this.currentLetter = letter;
-                
-            },
             
             searchCountries(countries) {
                 axios.get('https://restcountries.eu/rest/v2/all')
@@ -49,20 +44,6 @@
                 }
                 return countries.filter(country => {
                     return country.name.toLowerCase().includes(this.search.toLowerCase());
-                })
-            },
-
-            filterRegion(countries) {
-                axios.get('https://restcountries.eu/rest/v2/all')
-                .then(response => {
-                    this.countries = response.data;
-                })
-                .catch(error => {console.log(error)});
-                if(this.currentLetter === ''){
-                    return this.countries;
-                }
-                return countries.filter(country => {
-                    return country.name.charAt(0).toLowerCase() === this.currentLetter.toLowerCase();
                 })
             },
 
