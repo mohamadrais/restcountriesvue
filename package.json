@@ -1,0 +1,20 @@
+{
+  "name": "countries",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "axios": "^0.18.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "dependencies": {
+    "vue-router": "^3.1.6"
+  }
+}
